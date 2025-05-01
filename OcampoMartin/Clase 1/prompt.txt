@@ -1,0 +1,1 @@
+me podes generar el código HTML de una pagina web que contenga una vela encendida, sin nada mas solo la vela 

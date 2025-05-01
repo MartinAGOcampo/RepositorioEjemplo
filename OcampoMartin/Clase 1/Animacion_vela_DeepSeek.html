@@ -1,0 +1,54 @@
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de una Vela</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #282c34;
+        }
+
+        .vela {
+            position: relative;
+            width: 20px;
+            height: 100px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        .llama {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            width: 10px;
+            height: 20px;
+            background-color: yellow;
+            border-radius: 20px;
+            animation: parpadear 1s infinite alternate;
+        }
+
+        @keyframes parpadear {
+            0% {
+                height: 20px;
+                opacity: 1;
+            }
+            100% {
+                height: 25px;
+                opacity: 0.7;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="vela">
+    <div class="llama"></div>
+</div>
+
+</body>
+</html>
